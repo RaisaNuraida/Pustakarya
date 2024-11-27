@@ -1,0 +1,91 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #043c2c;
+}
+/* Navbar */
+.navbar {
+  background-color: hsl(240, 29%, 97%);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand {
+  color: #043c2c !important;
+  font-weight: 600;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+  margin-right: 20px;
+  margin-left: 25px;
+}
+/* Ini buat hover Icon, kalo mau pake hover textnya bisa diubah di sini */
+/* .navbar-brand:hover {
+    color: #cee2d2 !important; 
+} */
+.navbar-nav .nav-link {
+  color: #043c2c !important;
+  font-size: 1.1rem;
+  margin-right: 20px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-toggler-icon {
+  background-color: #cee2d2;
+}
+.dropdown-menu {
+  display: none; 
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  z-index: 1000;
+  background-color: #006633;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  min-width: 200px;
+}
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.dropdown-item {
+  color: #cee2d2 !important;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-item:hover {
+  background-color: #043c2c;
+}
+/* User Icon */
+.navbar-nav .nav-item .nav-link {
+  display: flex;
+  align-items: center;
+}
+.navbar-nav .nav-item .nav-link .bi {
+  margin-left: 10px;
+  font-size: 1.8rem;
+}
+/* Profil Dropdown */
+.dropdown-toggle::after {
+  content: none; /* Menyembunyikan tanda panah dropdown */
+}
+.dropdown-menu-end {
+  left: auto !important;
+  right: 0 !important;
+}
+@media (max-width: 768px) {
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+    padding: 8px 12px;
+  }
+  .navbar-brand {
+    font-size: 1.6rem;
+  }
+}
